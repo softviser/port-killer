@@ -12,7 +12,7 @@
     <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
     <SatelliteResourceLanguages>tr</SatelliteResourceLanguages>
 
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Product>Port Killer</Product>
     <AssemblyTitle>Port Killer</AssemblyTitle>
     <Description>Bu bilgisayarda dinlenen geliştirme portlarını listeler ve kapatır.</Description>

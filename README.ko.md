@@ -14,12 +14,19 @@
 
 ## 다운로드
 
-[Releases](https://github.com/softviser/port-killer/releases) 페이지에서 `PortKiller-1.0.0-win-x64.exe`를 받으세요. 파일 하나로 되어 있어 설치 프로그램이 필요 없고, .NET도 설치하지 않아도 됩니다. Windows 10 또는 11(64비트)이 필요합니다.
+[Releases](https://github.com/softviser/port-killer/releases) 페이지의 각 릴리스에는 두 가지 빌드가 있습니다. 둘 다 설치가 필요 없는 단일 파일이며 Windows 10 또는 11(64비트)이 필요합니다.
+
+| 파일 | 크기 | 요구 사항 |
+|---|---|---|
+| `PortKiller-<version>-win-x64.exe` | ~66 MB | 없음, .NET 포함 |
+| `PortKiller-<version>-win-x64-requires-net8.exe` | ~0.2 MB | [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0) (x64) |
+
+이미 .NET 8이 설치되어 있다면(대부분의 .NET 개발자 PC가 그렇습니다) 작은 파일로 충분합니다. 런타임이 없으면 Windows가 다운로드 링크가 있는 메시지를 표시합니다.
 
 실행 파일에는 코드 서명이 없으므로 처음 실행할 때 Windows SmartScreen이 경고를 표시할 수 있습니다. 이때 **추가 정보 > 실행**을 선택하면 계속할 수 있습니다. 다운로드한 파일은 `SHA256SUMS.txt`와 대조해 확인할 수 있습니다.
 
 ```powershell
-Get-FileHash .\PortKiller-1.0.0-win-x64.exe -Algorithm SHA256
+Get-FileHash .\PortKiller-*.exe -Algorithm SHA256
 ```
 
 ## 기능

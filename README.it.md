@@ -14,12 +14,19 @@ Realizzato da [Softviser Yazılım](https://softviser.com.tr). Open source con l
 
 ## Download
 
-Scarica `PortKiller-1.0.0-win-x64.exe` dalla pagina [Releases](https://github.com/softviser/port-killer/releases). È un singolo file: nessun installer e non serve avere .NET installato. Richiede Windows 10 o 11 (64 bit).
+Ogni versione nella pagina [Releases](https://github.com/softviser/port-killer/releases) contiene due build. Entrambe sono un singolo file senza installer e richiedono Windows 10 o 11 (64 bit).
+
+| File | Dimensione | Requisito |
+|---|---|---|
+| `PortKiller-<version>-win-x64.exe` | ~66 MB | Nessuno; .NET è incluso |
+| `PortKiller-<version>-win-x64-requires-net8.exe` | ~0.2 MB | [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0) (x64) |
+
+Se .NET 8 è già installato, come sulla maggior parte dei PC degli sviluppatori .NET, basta il file piccolo. Se il runtime manca, Windows mostra un messaggio con un link per scaricarlo.
 
 L'eseguibile non è firmato digitalmente, quindi Windows SmartScreen potrebbe mostrare un avviso al primo avvio. Scegli **Ulteriori informazioni > Esegui comunque** per continuare. Puoi verificare il download con `SHA256SUMS.txt`:
 
 ```powershell
-Get-FileHash .\PortKiller-1.0.0-win-x64.exe -Algorithm SHA256
+Get-FileHash .\PortKiller-*.exe -Algorithm SHA256
 ```
 
 ## Cosa fa

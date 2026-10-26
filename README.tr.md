@@ -14,12 +14,19 @@ Geliştirici: [Softviser Yazılım](https://softviser.com.tr) — MIT lisansı i
 
 ## İndirme
 
-[Releases](https://github.com/softviser/port-killer/releases) sayfasından `PortKiller-1.0.0-win-x64.exe` dosyasını indirin. Tek dosyadır, kurulum gerektirmez ve .NET kurulu olmasını istemez. Windows 10 veya 11 (64 bit) gerekir.
+[Releases](https://github.com/softviser/port-killer/releases) sayfasındaki her sürümde iki dosya bulunur. İkisi de tek dosyadır, kurulum gerektirmez ve Windows 10 veya 11 (64 bit) ister.
+
+| Dosya | Boyut | Gereksinim |
+|---|---|---|
+| `PortKiller-<version>-win-x64.exe` | ~66 MB | Yok; .NET içinde gelir |
+| `PortKiller-<version>-win-x64-requires-net8.exe` | ~0.2 MB | [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0) (x64) |
+
+Bilgisayarınızda .NET 8 zaten kuruluysa (çoğu .NET geliştiricisinde olduğu gibi) küçük dosya yeterlidir. Çalışma zamanı yoksa Windows, indirme bağlantısı içeren bir uyarı gösterir.
 
 Dosya dijital olarak imzalı olmadığı için Windows ilk çalıştırmada SmartScreen uyarısı gösterebilir. **Ek bilgi > Yine de çalıştır** ile devam edebilirsiniz. İndirdiğiniz dosyayı `SHA256SUMS.txt` ile doğrulayabilirsiniz:
 
 ```powershell
-Get-FileHash .\PortKiller-1.0.0-win-x64.exe -Algorithm SHA256
+Get-FileHash .\PortKiller-*.exe -Algorithm SHA256
 ```
 
 ## Neler yapıyor

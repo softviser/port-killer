@@ -10,12 +10,9 @@ internal sealed record Palette(
 /// <summary>Windows'un "uygulama modu" (açık/koyu) ve vurgu rengine göre renkler.</summary>
 internal static class Theme
 {
-    /// <summary>Sistem ayarını yok sayıp temayı zorlar (testlerde kullanılır).</summary>
-    internal static bool? ForceDark { get; set; }
-
     public static Palette Current()
     {
-        bool dark = ForceDark ?? Registry.GetValue(@"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize", "AppsUseLightTheme", 1) is 0;
+        bool dark = Registry.GetValue(@"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize", "AppsUseLightTheme", 1) is 0;
         var accent = Accent();
         return dark
             ? new(true, Back: Rgb(0x202020), Surface: Rgb(0x2B2B2B), Field: Rgb(0x2D2D2D), FieldBorder: Rgb(0x555555), Line: Rgb(0x353535),

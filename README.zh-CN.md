@@ -14,12 +14,19 @@
 
 ## 下载
 
-从 [Releases](https://github.com/softviser/port-killer/releases) 页面获取 `PortKiller-1.0.0-win-x64.exe`。它是单个文件：无需安装程序，也不需要安装 .NET。需要 Windows 10 或 11（64 位）。
+[Releases](https://github.com/softviser/port-killer/releases) 页面上的每个版本都提供两个构建。两者都是单个文件，无需安装，需要 Windows 10 或 11（64 位）。
+
+| 文件 | 大小 | 要求 |
+|---|---|---|
+| `PortKiller-<version>-win-x64.exe` | ~66 MB | 无；已内置 .NET |
+| `PortKiller-<version>-win-x64-requires-net8.exe` | ~0.2 MB | [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0) (x64) |
+
+如果已经安装了 .NET 8（大多数 .NET 开发者的电脑都已安装），使用小文件即可。如果缺少运行时，Windows 会显示一条带有下载链接的提示。
 
 该可执行文件没有代码签名，所以第一次运行时 Windows SmartScreen 可能会弹出警告。选择 **更多信息 > 仍要运行** 即可继续。你可以对照 `SHA256SUMS.txt` 校验下载的文件：
 
 ```powershell
-Get-FileHash .\PortKiller-1.0.0-win-x64.exe -Algorithm SHA256
+Get-FileHash .\PortKiller-*.exe -Algorithm SHA256
 ```
 
 ## 功能

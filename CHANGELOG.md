@@ -4,6 +4,17 @@ Bu dosyada sürümler arasındaki önemli değişiklikler tutulur. Biçim [Keep 
 
 ## [Yayınlanmadı]
 
+## [1.0.1] - 2026-10-26
+
+### Eklendi
+
+- Bilgisayarında .NET 8 Desktop Runtime kurulu olanlar için yaklaşık 0.2 MB'lık ikinci bir exe: `PortKiller-1.0.1-win-x64-requires-net8.exe`. .NET'i içinde taşıyan 66 MB'lık sürüm de yayınlanmaya devam ediyor.
+
+### Değişti
+
+- README'lerdeki indirme bölümü iki dosyayı ve gereksinimlerini anlatacak şekilde güncellendi.
+- Uygulamada kullanılmayan, yalnızca test için eklenmiş tema kancası kaldırıldı. Kullanıcı açısından davranış değişmedi.
+
 ## [1.0.0] - 2026-10-26
 
 İlk sürüm.
@@ -22,5 +33,6 @@ Bu dosyada sürümler arasındaki önemli değişiklikler tutulur. Biçim [Keep 
 - Windows'un açık/koyu uygulama modunu ve vurgu rengini izleyen tema. Ayarlar değiştiğinde uygulama yeniden başlatılmadan güncellenir.
 - Sürüm, lisans, web sitesi ve kaynak kod bağlantılarını gösteren Hakkında penceresi.
 
-[Yayınlanmadı]: https://github.com/softviser/port-killer/compare/v1.0.0...HEAD
+[Yayınlanmadı]: https://github.com/softviser/port-killer/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/softviser/port-killer/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/softviser/port-killer/releases/tag/v1.0.0
