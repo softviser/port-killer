@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>PortKiller</AssemblyName>
+    <RootNamespace>PortKiller</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <SatelliteResourceLanguages>tr</SatelliteResourceLanguages>
+
+    <Version>1.0.0</Version>
+    <Product>Port Killer</Product>
+    <AssemblyTitle>Port Killer</AssemblyTitle>
+    <Description>Bu bilgisayarda dinlenen geliştirme portlarını listeler ve kapatır.</Description>
+    <Company>Softviser Yazılım</Company>
+    <Authors>Softviser Yazılım</Authors>
+    <Copyright>© 2026 Softviser Yazılım — softviser.com.tr</Copyright>
+    <NeutralLanguage>tr-TR</NeutralLanguage>
+  </PropertyGroup>
+
+</Project>
