@@ -29,6 +29,8 @@ L'eseguibile non è firmato digitalmente, quindi Windows SmartScreen potrebbe mo
 Get-FileHash .\PortKiller-*.exe -Algorithm SHA256
 ```
 
+In Windows 11 con il **Controllo intelligente delle app** attivo, le app non firmate vengono bloccate direttamente e l'opzione "Esegui comunque" non è disponibile. Port Killer non è ancora firmato, quindi su questi PC non si avvia.
+
 ## Cosa fa
 
 - Raggruppa per programma le porte TCP in ascolto (IPv4 e IPv6). Gli strumenti di sviluppo come Node.js, Python, .NET, Docker e PostgreSQL hanno gruppi propri in cima; tutto il resto finisce in "Altre applicazioni" in fondo.

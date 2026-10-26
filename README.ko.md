@@ -29,6 +29,8 @@
 Get-FileHash .\PortKiller-*.exe -Algorithm SHA256
 ```
 
+**스마트 앱 컨트롤**이 켜져 있는 Windows 11에서는 서명되지 않은 앱이 바로 차단되며 '실행' 옵션도 없습니다. Port Killer는 아직 코드 서명이 되어 있지 않아 이런 PC에서는 실행되지 않습니다.
+
 ## 기능
 
 - 수신 대기 중인 TCP 포트(IPv4 및 IPv6)를 프로그램별로 묶어서 보여 줍니다. Node.js, Python, .NET, Docker, PostgreSQL 같은 개발 도구는 각각 별도 그룹으로 위쪽에 표시되고, 나머지는 모두 맨 아래의 "기타 앱"에 들어갑니다.

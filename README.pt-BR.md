@@ -29,6 +29,8 @@ O executável não é assinado digitalmente, então o Windows SmartScreen pode e
 Get-FileHash .\PortKiller-*.exe -Algorithm SHA256
 ```
 
+No Windows 11 com o **Controle Inteligente de Aplicativos** ativado, aplicativos sem assinatura são bloqueados diretamente e não há a opção "Executar assim mesmo". O Port Killer ainda não tem assinatura de código, então não vai abrir nessas máquinas.
+
 ## O que ele faz
 
 - Agrupa por programa as portas TCP em escuta (IPv4 e IPv6). Ferramentas de desenvolvimento como Node.js, Python, .NET, Docker e PostgreSQL têm grupos próprios no topo; todo o resto fica em "Outros aplicativos", no final.

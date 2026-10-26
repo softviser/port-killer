@@ -29,6 +29,8 @@ Dosya dijital olarak imzalı olmadığı için Windows ilk çalıştırmada Smar
 Get-FileHash .\PortKiller-*.exe -Algorithm SHA256
 ```
 
+Windows 11'de **Akıllı Uygulama Denetimi** açıksa imzasız uygulamalar doğrudan engellenir ve "Yine de çalıştır" seçeneği çıkmaz. Port Killer henüz kod imzalı olmadığı için bu bilgisayarlarda açılmaz.
+
 ## Neler yapıyor
 
 - Dinlenen TCP portlarını (IPv4 ve IPv6) programa göre gruplar. Node.js, Python, .NET, Docker, PostgreSQL gibi geliştirme araçları kendi gruplarında üstte, geri kalan uygulamalar en altta "Diğer uygulamalar" grubunda durur.

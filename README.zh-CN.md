@@ -29,6 +29,8 @@
 Get-FileHash .\PortKiller-*.exe -Algorithm SHA256
 ```
 
+在启用了**智能应用控制**的 Windows 11 上，未签名的应用会被直接阻止，也没有“仍要运行”选项。Port Killer 目前还没有代码签名，因此无法在这些电脑上运行。
+
 ## 功能
 
 - 按程序对监听中的 TCP 端口（IPv4 和 IPv6）分组。Node.js、Python、.NET、Docker 和 PostgreSQL 等开发工具各自单独成组，排在最上面；其余的都归入最下面的“其他应用”。

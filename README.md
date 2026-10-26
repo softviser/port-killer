@@ -29,6 +29,8 @@ The executable is not code-signed, so Windows SmartScreen may warn you the first
 Get-FileHash .\PortKiller-*.exe -Algorithm SHA256
 ```
 
+On Windows 11 with **Smart App Control** turned on, unsigned apps are blocked outright and there is no "Run anyway" option. Port Killer is not code-signed yet, so it will not start on those machines.
+
 ## What it does
 
 - Groups listening TCP ports (IPv4 and IPv6) by program. Development tools such as Node.js, Python, .NET, Docker and PostgreSQL get their own groups at the top; everything else goes into "Other applications" at the bottom.

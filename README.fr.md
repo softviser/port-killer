@@ -29,6 +29,8 @@ L'exécutable n'est pas signé, donc Windows SmartScreen peut afficher un averti
 Get-FileHash .\PortKiller-*.exe -Algorithm SHA256
 ```
 
+Sous Windows 11, lorsque le **Contrôle intelligent des applications** est activé, les applications non signées sont bloquées directement, sans option « Exécuter quand même ». Port Killer n'est pas encore signé, il ne démarrera donc pas sur ces machines.
+
 ## Fonctionnalités
 
 - Regroupe par programme les ports TCP en écoute (IPv4 et IPv6). Les outils de développement comme Node.js, Python, .NET, Docker et PostgreSQL ont leurs propres groupes en haut ; tout le reste va dans « Autres applications » en bas.

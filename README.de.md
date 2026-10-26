@@ -29,6 +29,8 @@ Die ausführbare Datei ist nicht codesigniert, daher warnt Windows SmartScreen b
 Get-FileHash .\PortKiller-*.exe -Algorithm SHA256
 ```
 
+Unter Windows 11 mit aktivierter **Intelligenter App-Steuerung** werden unsignierte Apps direkt blockiert, und die Option „Trotzdem ausführen“ gibt es nicht. Port Killer ist noch nicht codesigniert und startet auf solchen Rechnern daher nicht.
+
 ## Funktionen
 
 - Gruppiert lauschende TCP-Ports (IPv4 und IPv6) nach Programm. Entwicklungswerkzeuge wie Node.js, Python, .NET, Docker und PostgreSQL erhalten eigene Gruppen am Anfang der Liste; alles andere landet unten unter "Andere Anwendungen".
